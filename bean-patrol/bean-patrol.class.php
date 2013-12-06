@@ -8,7 +8,6 @@ class BeanPatrol {
 
 			if (session_status() === PHP_SESSION_NONE){session_start();}
 
-<<<<<<< HEAD
 			// ========== CONFIGURE HERE ===============
 			$database = '{{your_db_name}}';
 			$user = '{{your_db_user}}';
@@ -17,15 +16,6 @@ class BeanPatrol {
 
 			R::setup('mysql:host=localhost;
 			dbname='.$database,$user,$pass);
-=======
-			// check environement
-			$database = '{{your_db_name}}';
-			$user = '{{your_db_user}}';
-			$pass = '{{your_db_password}}';
-
-			R::setup('mysql:host=localhost;
-	        dbname='.$database,$user,$pass);
->>>>>>> 50bb2946ee1d8284d66e521bd9c03498999e50db
 			R::$writer->setUseCache(true);
 
 		}
