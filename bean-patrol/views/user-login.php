@@ -1,0 +1,1 @@
+<a href="#" class="action-login">Login</a> | <a href="#" class="action-register">Register</a>
